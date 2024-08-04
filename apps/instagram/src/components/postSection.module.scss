@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=M+PLUS+1+Code:wght@100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Riot&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.postHeadSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.postSection {
+  // flex: 3;
+  // padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  // background-color: #888;
+  font-family: "Roboto", sans-serif;
+
+}
+
+.post {
+  // background-color: #000;
+  // color: #fff;
+  
+  padding: 10px;
+  // border-radius: 10px;
+  // margin-top: 20px;
+  // height: 300px;
+  // width: 500px;
+  display: flex;
+  // align-items: center;
+  flex-direction: column;
+  // justify-content: center;
+  font-family: "Roboto", sans-serif;
+
+
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+
+}
+.head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+
+}
+.userInfo {
+  display: flex;
+  // align-items: center;
+  font-family: "Roboto", sans-serif;
+
+  justify-content: end;
+}
+
+.username {
+  // font-weight: bold;
+  margin-right: 5px;
+  font-family: "Roboto", sans-serif;
+
+}
+.timestamp {
+  color: #888;
+  font-family: "Roboto", sans-serif;
+
+}
+
+.profilePic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.menuIcon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.postImageDiv {
+  display: flex;
+  height: 500px;
+  width: 450px;
+  object-fit: contain;
+  // align-items: center;
+  justify-content: center;
+  // padding: 10px 0px 10px 0px ;
+  border: 1px solid #333;
+  margin-bottom: 10px;
+}
+.postImage {
+  margin-bottom: 10px;
+  // border-radius: 10px;
+  cursor: pointer;
+  object-fit: cover;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  // padding: 10px 10px 10px 10px 
+  
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+
+  i {
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 15px;
+
+    &.fa-heart {
+      color: red;
+    }
+
+    &.fas {
+      color: red;
+    }
+
+    &.liked {
+      color: red;
+    }
+    
+  }
+}
+
+.likes {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.caption {
+  margin-bottom: 10px;
+  font-weight: 100;
+  .username {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+}
+
+.comments {
+  color: #888;
+}
+.postAction{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bookmark{
+  display: flex;
+  // justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.bookmark {
+  i {
+    font-size: 20px;
+    cursor: pointer;
+
+    &.fas {
+      color: #000; /* or any color you want the filled bookmark to be */
+    }
+  }
+}
+@media (max-width: 855px) {
+  .postHeadSection {
+    flex-direction: column;
+  }
+
+  // .postSection {
+  //   padding: 10px;
+  // }
+
+  
+  .postImage {
+    width: 100%;
+    // height: auto;
+  }
+}
+// @media (max-width: 825px) {
+//   .postHeadSection {
+//     flex-direction: column;
+//   }
+
+//   .postSection {
+//     padding: 10px;
+//   }
+
+//   .post {
+//     width: 100%;
+//   }
+//   .postImage {
+//     width: 100%;
+//     // height: auto;
+//   }
+// }
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .userInfo {
+    align-items: flex-start;
+  }
+
+  .postAction {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .actions {
+    margin-bottom: 5px;
+  }
+
+  .bookmark {
+    align-self: flex-end;
+  }
+}

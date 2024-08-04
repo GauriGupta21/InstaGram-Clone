@@ -1,0 +1,36 @@
+.bottomBar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  // background-color:black;
+  border-top: 1px solid #dbdbdb;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 10;
+  flex-direction: row;
+  background-color: #000;
+  @media (max-width: 760px) {
+  .bottomBar{
+    background-color: #000;
+  }
+}
+
+  .fa {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .light {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  
+  .dark {
+    background-color: #000;
+    color: #fff;
+  }
+  
+
+}
